@@ -18,7 +18,7 @@ namespace DriveInfoApp
                 // Проверить смонтировано ли устройство.
                 if (drive.IsReady)
                 {
-                    Console.WriteLine("Free space: {0}", drive.TotalFreeSpace);
+                    Console.WriteLine("Free space: {0} Mb", drive.TotalFreeSpace/1024/1024);
                     Console.WriteLine("Format: {0}", drive.DriveFormat);
                     Console.WriteLine("Label: {0}", drive.VolumeLabel);
                 }
